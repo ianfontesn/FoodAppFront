@@ -1,0 +1,19 @@
+<div
+  class="container d-flex justify-content-center border rounded rounded-2"
+  id="card-container"
+>
+  <div class="row align-items-center w-100 h-100">
+    <div class="col-8 d-flex justify-content-center flex-column pt-2 px- h-100">
+      <p id="title">{{ name }}</p>
+      <p id="description">{{ description }}</p>
+      <button mat-flat-button class="w-50">Conferir!</button>
+    </div>
+    <div class="col-4 d-flex p-0">
+      <img
+        src="{{ imageUrl }}"
+        alt="Imagem do produto"
+        class="img-fluid rounded"
+      />
+    </div>
+  </div>
+</div>

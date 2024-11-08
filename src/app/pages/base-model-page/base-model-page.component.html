@@ -1,0 +1,57 @@
+<div class="container-fluid p-0">
+  <div class="container mw-100 shadow" id="header-container">
+    <!-- HEADER -->
+    <div class="row h-100">
+      <div class="col-3 d-flex align-items-center justify-content-end px-3">
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/batata-frita-logo.svg" />
+          </div>
+          <div class="col d-flex align-items-center">
+            <p id="text-logomarca"><span>F</span>ood<span>A</span>pp</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 d-flex align-items-center justify-content-center"
+        id="menu-area"
+      >
+        <div class="row">
+          <div class="col">
+            <button mat-fab extended color="danger">
+              <mat-icon>work</mat-icon>
+              Produtos
+            </button>
+          </div>
+          <div class="col">
+            <button mat-fab extended color="danger">
+              <mat-icon>shopping_cart</mat-icon>
+              Carrinho
+            </button>
+          </div>
+          <div class="col">
+            <button mat-fab extended color="danger">
+              <mat-icon>account_circle</mat-icon>
+              Perfil
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 d-flex align-items-center justify-content-evenly">
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/whatsapp-icon.svg" />
+          </div>
+          <div class="col">
+            <img src="assets/images/instagram-icon.svg" />
+          </div>
+          <div class="col">
+            <img src="assets/images/facebook-icon.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NG-CONTENT -->
+    <ng-content></ng-content>
+  </div>
+</div>

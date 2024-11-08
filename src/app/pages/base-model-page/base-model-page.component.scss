@@ -1,0 +1,21 @@
+#header-container {
+  height: 5rem;
+  background-color: rgb(241, 241, 241);
+}
+
+#text-logomarca {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+
+  span {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+#menu-area {
+  button {
+    background-color: crimson;
+  }
+}

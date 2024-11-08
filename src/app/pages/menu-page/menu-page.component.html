@@ -1,0 +1,14 @@
+<app-base-model-page>
+  <div class="row pt-5">
+    @for (category of categories; track category.id) {
+    <div class="col-4">
+      <app-menu-card
+        [name]="category.name"
+        [description]="category.description"
+        [imageUrl]="category.imageUrl"
+      >
+      </app-menu-card>
+    </div>
+    }
+  </div>
+</app-base-model-page>
