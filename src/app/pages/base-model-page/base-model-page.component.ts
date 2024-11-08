@@ -14,8 +14,17 @@ import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 export class BaseModelPageComponent {
   disableElement: boolean = false;
 
+  @HostListener('window:load')
+  onLoad(event: any) {
+    this.updateDisableElement(event);
+  }
+
   @HostListener('window:resize', ['$event'])
-  onResize = (event: any) => {
-    this.disableElement = window.innerWidth >= 991 ? true : false;
+  onResize = (event?: any) => {
+    this.updateDisableElement(event);
   };
+
+  private updateDisableElement(_event: any) {
+    this.disableElement = window.innerWidth >= 991 ? true : false;
+  }
 }
