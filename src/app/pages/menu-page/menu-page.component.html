@@ -1,8 +1,9 @@
 <app-base-model-page>
-  <div class="row pt-5">
+  <div class="row m-0 pt-5">
     @for (category of categories; track category.id) {
     <div class="col-12 col-lg-6 col-xl-4">
       <app-menu-card
+        class="d-flex justify-content-center"
         [name]="category.name"
         [description]="category.description"
         [imageUrl]="category.imageUrl"
