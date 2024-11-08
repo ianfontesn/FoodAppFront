@@ -8,6 +8,11 @@
 
 .sidenav-content-container {
   background-color: $primary;
+
+  button {
+    background-color: white;
+    color: $primary;
+  }
 }
 
 .button-div {
