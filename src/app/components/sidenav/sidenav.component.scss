@@ -1,0 +1,20 @@
+@import "../../../utils/colors.scss";
+
+.sidenav-container {
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+}
+
+.sidenav-content-container {
+  background-color: $primary;
+}
+
+.button-div {
+  margin-left: 10px;
+  margin-top: 10px;
+
+  button {
+    background-color: $primary;
+  }
+}

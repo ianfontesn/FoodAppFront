@@ -1,43 +1,53 @@
 <div class="container-fluid p-0">
-  <div class="container mw-100 shadow" id="header-container">
+  <div class="container mw-100 shadow py-3" id="header-container">
     <!-- HEADER -->
     <div class="row h-100">
-      <div class="col-3 d-flex align-items-center justify-content-end px-3">
+      <div
+        class="col-12 col-lg-3 d-flex flex-column align-items-center justify-content-end px-3"
+      >
+        <!-- LOGO -->
         <div class="row">
-          <div class="col">
+          <div class="col-4">
             <img src="assets/images/batata-frita-logo.svg" />
           </div>
-          <div class="col d-flex align-items-center">
+          <div class="col-8 d-flex align-items-center">
             <p id="text-logomarca"><span>F</span>ood<span>A</span>pp</p>
           </div>
         </div>
       </div>
+
+      <!-- MENU -->
+      @if(disableElement) {
       <div
         class="col-6 d-flex align-items-center justify-content-center"
         id="menu-area"
       >
-        <div class="row">
+        <div id="header-menu-expanded" class="row">
           <div class="col">
-            <button mat-fab extended color="danger">
+            <button mat-fab extended>
               <mat-icon>work</mat-icon>
               Produtos
             </button>
           </div>
           <div class="col">
-            <button mat-fab extended color="danger">
+            <button mat-fab extended>
               <mat-icon>shopping_cart</mat-icon>
               Carrinho
             </button>
           </div>
           <div class="col">
-            <button mat-fab extended color="danger">
+            <button mat-fab extended>
               <mat-icon>account_circle</mat-icon>
               Perfil
             </button>
           </div>
         </div>
       </div>
-      <div class="col-3 d-flex align-items-center justify-content-evenly">
+      }
+
+      <div
+        class="col-12 col-lg-3 d-flex align-items-center justify-content-evenly pt-4"
+      >
         <div class="row">
           <div class="col">
             <img src="assets/images/whatsapp-icon.svg" />
@@ -54,4 +64,9 @@
     <!-- NG-CONTENT -->
     <ng-content></ng-content>
   </div>
+
+  <!-- SIDENAV -->
+  @if(!disableElement){
+  <app-sidenav id="sidenav-container"></app-sidenav>
+  }
 </div>

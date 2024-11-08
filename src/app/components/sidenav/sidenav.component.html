@@ -1,0 +1,15 @@
+<mat-drawer-container class="sidenav-container h-100">
+  <mat-drawer #drawer class="sidenav-content-container" mode="side">
+  </mat-drawer>
+
+  <div class="button-div">
+    <button
+      type="button"
+      (click)="drawer.toggle()"
+      mat-mini-fab
+      aria-label="Abrir menu"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</mat-drawer-container>
